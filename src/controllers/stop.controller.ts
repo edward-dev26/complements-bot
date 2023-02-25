@@ -8,7 +8,7 @@ export class StopController implements IController {
   execute(context: IControllerContext, provider: IProvider) {
     this.scheduler.deleteJob();
 
-    const message = 'Любимая, Инночка, твои комплименты временно приостановлены. Чтобы возобновить комплементы выполни /start команду';
+    const message = 'Любимая, Инночка, твои комплименты временно приостановлены. Чтобы возобновить комплименты выполни /start команду';
 
     provider.sendMessage(context.chatId, message);
   }
