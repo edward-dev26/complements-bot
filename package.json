@@ -4,7 +4,10 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "env-cmd -f ./.env nodemon src/index.ts"
+    "dev": "env-cmd -f ./.env nodemon src/index.ts",
+    "postinstall": "tsc",
+    "start": "node dist/index.js",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "keywords": [],
   "author": "",
