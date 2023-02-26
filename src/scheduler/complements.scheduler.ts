@@ -5,7 +5,7 @@ export class ComplementsScheduler implements IScheduler {
   private job: Job | null = null;
 
   schedule(job: JobType): void {
-    this.job = scheduleJob('* * 10 * * *', job);
+    this.job = scheduleJob('* * 8 * * *', job);
   }
 
   deleteJob(): void {
